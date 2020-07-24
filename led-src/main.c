@@ -2,7 +2,6 @@
 #include <core_cm3.h>
 #include <stdlib.h>
 #include "stupid_delay.h"
-#include "timers.h"
 
 #define LED_port GPIOC
 #define LED_Blue (1 << 8)
@@ -41,7 +40,6 @@ static void configure_clock() {
 
 int main(void){
 	configure_clock();
-	NVIC_prioritySet();
 	init_blue_led();
 	delay_init();
 	while(1){

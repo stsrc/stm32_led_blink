@@ -7,7 +7,7 @@ ASFLAGS = -g3
 
 # object files
 
-OBJS= stupid_delay.o timers.o main.o $(STARTUP)
+OBJS= stupid_delay.o main.o $(STARTUP)
 
 # include common make file
 
