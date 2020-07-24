@@ -42,7 +42,6 @@ static void configure_clock() {
 int main(void){
 	configure_clock();
 	NVIC_prioritySet();
-	configure_clock();
 	init_blue_led();
 	delay_init();
 	while(1){
