@@ -27,8 +27,6 @@ vpath %.s $(CORE)/gcc
 #
 LDSCRIPT=$(CORE)/gcc/linker/STM32F100XB_FLASH.ld
 STARTUP=startup_stm32f100xb.o system_stm32f1xx.o
-ARM_MATH=arm_cos_f32.o arm_cfft_f32.o arm_cmplx_mag_f32.o arm_const_structs.o arm_max_f32.o arm_rms_f32.o arm_common_tables.o arm_cfft_radix8_f32.o \
-	 arm_bitreversal2.o
 
 PTYPE=STM32F10X_MD_VL
 DEVICE=STM32F100xB
